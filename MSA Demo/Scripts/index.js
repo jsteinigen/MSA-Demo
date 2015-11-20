@@ -1,6 +1,6 @@
 ﻿// This event triggers on page load
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM loaded and ready to go!");
+    console.log("DOM loaded!");
     //calls the below define funtion loadStudents()
     loadStudents();
 });
