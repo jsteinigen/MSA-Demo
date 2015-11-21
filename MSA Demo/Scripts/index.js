@@ -17,17 +17,17 @@ function setupStudentsTable(studentsList) {
     for (i = 0; i < studentsList.length; i++) {
         var row = document.createElement("tr");
 
-        var firstNameCol = document.createElement("td");
-        firstNameCol.innerHTML = studentsList[i].name;
-        row.appendChild(firstNameCol);
-
         var lastNameCol = document.createElement("td");
-        lastNameCol.innerHTML = studentsList[i].surname
+        lastNameCol.innerHTML = studentsList[i].LastName
         row.appendChild(lastNameCol);
 
-        var countryCol = document.createElement("td");
-        countryCol.innerHTML = studentsList[i].country
-        row.appendChild(countryCol);
+        var firstNameCol = document.createElement("td");
+        firstNameCol.innerHTML = studentsList[i].FirstMidName;
+        row.appendChild(firstNameCol);
+
+        //var countryCol = document.createElement("td");
+        //countryCol.innerHTML = studentsList[i].EnrollmentDate;
+        //row.appendChild(countryCol);
 
         studentTable.appendChild(row);
     }

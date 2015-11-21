@@ -8,7 +8,9 @@
             $.ajax({
                 type: "GET",
                 dataType: "jsonp",
-                url: "http://api.uinames.com/?amount=25",
+
+                url: "http://au-cdbr-azure-east-a.cloudapp.net/MSADemoDB/api/?amount=5",
+                //url: "http://api.uinames.com/?amount=25",
                 success: function (data) {
                     callback(data);
                 }
