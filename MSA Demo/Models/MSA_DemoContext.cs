@@ -7,6 +7,8 @@ using System.Web;
 
 namespace MSA_Demo.Models
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+
     public class MSA_DemoContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
