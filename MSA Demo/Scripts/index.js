@@ -1,7 +1,7 @@
 ﻿// This event triggers on page load
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM loaded!");
-    //calls the below define funtion loadStudents()
+    //calls the below defined funtion loadStudents()
     loadStudents();
 });
 function loadStudents() {
@@ -18,16 +18,16 @@ function setupStudentsTable(studentsList) {
         var row = document.createElement("tr");
 
         var lastNameCol = document.createElement("td");
-        lastNameCol.innerHTML = studentsList[i].LastName
+        lastNameCol.innerHTML = studentsList[i].LastName;
         row.appendChild(lastNameCol);
 
-        var firstNameCol = document.createElement("td");
-        firstNameCol.innerHTML = studentsList[i].FirstMidName;
-        row.appendChild(firstNameCol);
+        var firstMidNameCol = document.createElement("td");
+        firstMidNameCol.innerHTML = studentsList[i].FirstMidName;
+        row.appendChild(firstMidNameCol);
 
-        //var countryCol = document.createElement("td");
-        //countryCol.innerHTML = studentsList[i].EnrollmentDate;
-        //row.appendChild(countryCol);
+        var enrollmentDateCol = document.createElement("td");
+        enrollmentDateCol.innerHTML = studentsList[i].EnrollmentDate;
+        row.appendChild(enrollmentDateCol);
 
         studentTable.appendChild(row);
     }
